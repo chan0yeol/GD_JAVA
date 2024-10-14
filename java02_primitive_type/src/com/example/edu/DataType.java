@@ -1,5 +1,7 @@
 package com.example.edu;
 
+import java.util.Scanner;
+
 // TODO 001 타입의 선언과 대입
 public class DataType {
 	// TODO 002 선언과 대입
@@ -47,7 +49,17 @@ public class DataType {
 		
 		//큰 숫자의 구분을 위해 '_'를 통해서 크기를 구분할 수 있다.(숫자의 크기를 가독성)
 		int bibNumber = 1_000_000;
-		
 	} // integerType end
-
+	
+	//TODO 006 실수 타입(부동소수점 / Floating Point)
+	public void floatType() {
+		double myDouble = 3.14; // 실수표기법, 리터럴의 크기는 double 값을 가진다.
+		double myDouble2 = 3e2; // 지수(exponential) 표기법 3*10^2 = 300
+		
+		// java에서 실수 값은 항상 double의 크기로 유지 된다.
+		// 따라서 float 타입의 선언을 통해서 대입할 경우는 
+		// 1) 값이 float값의 리터럴로 되기위해서 F접미사를 사용한다. ex) float f = 3.14f;
+		// 2) 명시적 Casting 연산자를 사용하면 된다 ex) float f = (float)3.14;
+		
+	}
 }
