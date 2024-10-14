@@ -31,7 +31,23 @@ public class DataType {
 		short s1 = 1;
 		short calShort = (short) (maxShort + s1);
 		System.out.println(calShort);
-
-	}
+	} // declaring_assignment end
+	
+	//TODO 005 정수의 타입
+	public void integerType() {
+		byte bVal  = 0; // -128 ~ 127 : 8bit
+		short sVal = 0; // -32768 ~ 32767 : 16 bit
+		int i = 0; // -2^31 ~ 2^31-1 : 32bit
+		long l = 0; // -2^63 ~ 2^63-1 : 64bit
+		
+		//리터럴 표기법
+		int myHex = 0xF; //16진수 표기법 0x hexdecimal (base 16) 
+		int myOcty = 07; //8진수 표기법 0 octal(base 8)
+		int myBi = 0b10; //2진수 표기법(binary) (base 2), java 1.7 부터 사용되는 표기법
+		
+		//큰 숫자의 구분을 위해 '_'를 통해서 크기를 구분할 수 있다.(숫자의 크기를 가독성)
+		int bibNumber = 1_000_000;
+		
+	} // integerType end
 
 }
