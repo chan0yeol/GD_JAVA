@@ -1,5 +1,6 @@
 package com.example.edu;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 // TODO 001 타입의 선언과 대입
@@ -81,4 +82,31 @@ public class DataType {
 		System.out.println("unicode 표기법 :" + unicodeChar);
 
 	}// charType
+
+	// TODO 008 논리형 타입(예약어로 되어있다. true/false, 1,0으로 치환 되지 않음)
+	public void booleanType() {
+		boolean bool1 = false;
+		boolean bool2 = true;
+		// System.out.println(bool1+1); 타입이 다르기 때문에 연산의 대상이 아니다.
+		
+	}
+	
+	// TODO 009 var 타입 
+	// java 10 부터 로컬 변수는 var로 선언하여 컴파일러가 할당에 따라 변수의 유형을 자동으로 결정할 수 있도록 한다. => 동적변수
+	// *** vvar 타입은 local variavle(지역변수)에서만 사용가능
+	// *** var 타입은 선언과 대입을 동시에 해야 한다.
+	public void varType()  {
+		// int i; => 선언 
+		// int i = 0;  => 선언과 대입 = 초기화
+		
+		// 다음 두 선언은 동일
+		int i1 = 0; // Implicit type
+		var i2 = 5; // Explicit type
+		
+		// ** 할당에서 변수의 유형이 분명한 경우 선언을 줄이고, 가독성을 높히기 위해 var의 사용을 지향한다.
+		ArrayList array = new ArrayList<>(); 
+		var arr = new ArrayList<>();
+		
+		
+	}
 }
