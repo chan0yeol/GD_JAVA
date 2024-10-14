@@ -8,6 +8,6 @@ public class CharHome {
 		char unicodeChar = '\u007a';
 		System.out.println("'z'를 unicode표기법 으로 출력 : " + unicodeChar);
 	}
-	//연산 : 'z'는 정수의 값이 무엇인가?
+	// 연산 : 'z'는 정수의 값이 무엇인가?
 	// 정수의 값을 hexa 값으로 만든 후 , Unicode 표기법 으로 선언 및 대입하고 출력 
 }
