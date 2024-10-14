@@ -9,7 +9,8 @@ public class DataTypeMain {
 	// jvm 이 처음 자동으로 호출하는 메소드
 	public static void main(String[] args) {
 		DataType dt = new DataType(); // 클래스를 사용하기 위해 메모리에 올리는 방법 new = instance화 객체생성
-		dt.declaring_assignment(); // 호출
+//		dt.declaring_assignment(); // 호출
+		dt.charType();
 	}
 
 }
