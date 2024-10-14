@@ -81,7 +81,7 @@ public class DataType {
 		char unicodeChar = '\u0041';
 		System.out.println("unicode 표기법 :" + unicodeChar);
 
-	}// charType
+	}// charType end
 
 	// TODO 008 논리형 타입(예약어로 되어있다. true/false, 1,0으로 치환 되지 않음)
 	public void booleanType() {
@@ -93,7 +93,7 @@ public class DataType {
 	
 	// TODO 009 var 타입 
 	// java 10 부터 로컬 변수는 var로 선언하여 컴파일러가 할당에 따라 변수의 유형을 자동으로 결정할 수 있도록 한다. => 동적변수
-	// *** vvar 타입은 local variavle(지역변수)에서만 사용가능
+	// *** var 타입은 local variable(지역변수)에서만 사용가능
 	// *** var 타입은 선언과 대입을 동시에 해야 한다.
 	public void varType()  {
 		// int i; => 선언 

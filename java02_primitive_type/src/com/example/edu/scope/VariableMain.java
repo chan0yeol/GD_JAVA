@@ -1,10 +1,10 @@
 package com.example.edu.scope;
 
-//TODO 010 변수의 범위를 설명하기 위한 VariableMain 클래스 
+// TODO 010 변수의 범위를 설명하기 위한 VariableMain 클래스 
 public class VariableMain {
 
 	public static void main(String[] args) {
-		//TODO 012 local variable은 외부에서 입력 및 수정이 불가능.
+		// TODO 012 local variable은 외부에서 입력 및 수정이 불가능.
 		// VariableScope 클래스에 있는 멤버를 호출 하고 싶다.
 		// -> VariableScope 클래스를 객체화(instance화 - new)를 통해 메모리에 할당하고 접근 .
 		VariableScope vs = new VariableScope();
@@ -24,13 +24,10 @@ public class VariableMain {
 		
 		//TODO 014 static variable은 메모리에 미리 할당되기 때문에 new를 하지않고
 		// 사용할 변수의 위치와 이름만 알면 된다.
-		System.out.println("static 변수 : "+VariableScope.staticVar);
+		System.out.println("static 변수 : " + VariableScope.staticVar);
 		vs.staticVar = 100;
 		System.out.println(vs1.staticVar);
-		System.out.println("static 변수 : "+VariableScope.staticVar);
-		
-		
-		
+		System.out.println("static 변수 : " + VariableScope.staticVar);
 		
 	}
 
