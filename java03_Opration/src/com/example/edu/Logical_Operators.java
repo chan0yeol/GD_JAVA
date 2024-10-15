@@ -10,8 +10,7 @@ public class Logical_Operators {
 		System.out.println(5 & 2);
 		System.out.println(5 | 2);
 	}
-
-	// short circuit (&&, ||)
+	//TODO 005 short circuit (&&, ||) 
 	public void shortCircuit() {
 		// & 선행의 결과와 상관 없이 연산하기 때문에 선행 후행 모두 실행됨
 //		boolean isc1 = returnTrue() & returnFalse(); // returnTrue 실행 returnFalse 실행
@@ -20,11 +19,10 @@ public class Logical_Operators {
 		// && 선행의 결과(true/false)에 따라서 후행의 동작을 하지 않는다.
 		boolean isc3 = returnTrue() && returnFalse(); // returnTrue 실행 returnFalse 실행
 		boolean isc4 = returnFalse() && returnTrue(); // returnFalse 실행
-
-		
-		
+				
+		//Character.getNumericValue();
 	} // shortCircuit end
-
+	
 	private boolean returnTrue() {
 		System.out.println("returnTrue 메소드 실행");
 		return true;

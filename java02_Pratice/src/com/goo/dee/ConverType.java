@@ -1,5 +1,7 @@
 package com.goo.dee;
 
+import java.util.Arrays;
+
 public class ConverType {
 	// String -> char[]
 	public void fn01() {
@@ -20,11 +22,11 @@ public class ConverType {
 		 */
 		String str = "abcde";
 		char[] c = str.toCharArray();
-		for (char d : str.toCharArray()) {
-			System.out.print(d);
-		}
+		/*
+		 * for (char d : str.toCharArray()) { System.out.print(d); }
+		 */
 		System.out.println();
-		System.out.println(c);
+		System.out.println(Arrays.toString(c));
 	} // fn01 end
 
 	// 10진수 -> 2진수
@@ -47,7 +49,7 @@ public class ConverType {
 		String toHex = Integer.toHexString(a);
 		System.out.println(toHex);
 	} // fn04 end
-
+	
 	// int -> char 66 -> 'A'
 	public void fn05() {
 		int n = 66;
@@ -58,7 +60,7 @@ public class ConverType {
 	// char -> int 'A' -> 65 : casting 연산자, 연산자
 	public void fn06() {
 		char c = 'A';
-		int n = (int) c;
+		int n = c;
 		System.out.println(n);
 	} // fn06 end
 
@@ -73,7 +75,8 @@ public class ConverType {
 	public void fn08() {
 		char c1 = '0';
 		char c2 = '9';
-		System.out.println((int) (c1 - c2));
+		int cal = (int) (c1 - c2);
+		System.out.println(cal);
 //		
 	}
 
