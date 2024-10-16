@@ -96,4 +96,5 @@ public class TypeProcess {
 		int id2 = (int) fVal; // casting
 
 	} // floatFn end
+	
 }

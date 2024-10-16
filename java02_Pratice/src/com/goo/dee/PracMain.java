@@ -7,7 +7,7 @@ public class PracMain {
 //		CharHome convert = new CharHome();
 //		convert.zConvert();
 		ConverType ct = new ConverType();
-		ct.fn01();
+//		ct.fn01();
 //		ct.fn02();
 //		ct.fn03();
 //		ct.fn04();
