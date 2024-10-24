@@ -18,17 +18,16 @@ public class EducationUtility {
 	 */
 	public static int getNumericValue() {
 		int n=0;
-		
 		while (true) {
 			try {
 				Scanner scan = new Scanner(System.in);
-				System.out.println("정수만 입력해주세요");
+				System.out.println("정수만 입력하세요");
 				n = scan.nextInt();
 				break;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				System.err.println(e.toString());
-				System.err.println("정수만 입력하라고!!!!");
+				System.err.println("정수가 아닙니다.");
 			} 
 		}
 		return n;
