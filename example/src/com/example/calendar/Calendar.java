@@ -1,5 +1,9 @@
 package com.example.calendar;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
+
 public class Calendar {
 	public boolean isYoon(int year) {
 		return (year % 4 == 0) && (year % 100 != 0) || (year % 100 == 0) && (year % 400 == 0);
@@ -49,5 +53,11 @@ public class Calendar {
 	public String checkDay(int day) {
 		String[] chkday = { "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일" };
 		return chkday[day];
+	}
+	public int d_Day(int year, int month, int day) {
+		LocalDate targetDate = LocalDate.of(year,month,day);
+		LocalDate today = LocalDate.now();
+		
+		return Math.abs((int) ChronoUnit.DAYS.between(targetDate, today));
 	}
 }
