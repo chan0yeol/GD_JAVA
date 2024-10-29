@@ -40,5 +40,5 @@ public class InfoMain {
 		System.out.println(System.identityHashCode(info_002));
 		
 	}
-
+	class InfoMain2 {}
 }
